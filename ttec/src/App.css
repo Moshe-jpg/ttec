@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  letter-spacing: 1.2px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #bfccb5;
+  --red: #b31312;
+  --light-transparent: rgba(255, 255, 255, 0.25);
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  background: #f5efe7;
+}
+
+section {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+a,
+button,
+li {
+  all: unset;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* navbar component */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 15vh;
+  width: 100%;
+  padding: 0 3rem;
+  z-index: 500;
+  backdrop-filter: blur(3px);
+  color: var(--white);
+}
+
+.navbar .nav-logo {
+  height: 2rem;
+}
+
+.navbar ul {
+  /* width: 50%; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li:last-child {
+  margin: 0 0 0 15px;
+}
+
+.navbar .nav-link {
+  font-size: 1.3rem;
+}
+
+.navbar .last-nav-link {
+  background: var(--red);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* home component */
+
+
+#home .bg-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "morning1 morning2"
+    "rr speech";
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#home .bg-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home #morning1 { grid-area: morning1; }
+#home #morning2 { grid-area: morning2; }
+#home #rr { grid-area: rr; }
+#home #speech { grid-area: speech; }
+
+#home #logo {
+  grid-area: 1 / 1 / 3 / 3;
+  z-index: 1;
+  align-self: center;
+  justify-self: center;
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+#home .home-container {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home .home-container h1 {
+  font-size: 2rem;
+}
+
+#home .home-container h2 {
+  font-size: 1.5rem;
 }
