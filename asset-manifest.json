@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7e97807.css",
-    "main.js": "/static/js/main.546bb8a1.js",
-    "static/js/787.4d218a1e.chunk.js": "/static/js/787.4d218a1e.chunk.js",
-    "static/media/seder-pic-2.jpg": "/static/media/seder-pic-2.68665b4beda6d7827ba7.jpg",
-    "static/media/speech.jpg": "/static/media/speech.51981cdf58c576eb9aba.jpg",
-    "static/media/logo-small.png": "/static/media/logo-small.ee1f1ccb5c9589e56413.png",
-    "static/media/morning-1.jpg": "/static/media/morning-1.29966ce728facf716d02.jpg",
-    "static/media/rabbi-rudner.jpg": "/static/media/rabbi-rudner.f4dfbc09ced2d9c69556.jpg",
-    "static/media/morning-2.jpg": "/static/media/morning-2.00d4a0f5830a230024c9.jpg",
-    "static/media/ttec-logo.png": "/static/media/ttec-logo.d5133fedd907f6476c2a.png",
-    "index.html": "/index.html",
-    "main.d7e97807.css.map": "/static/css/main.d7e97807.css.map",
-    "main.546bb8a1.js.map": "/static/js/main.546bb8a1.js.map",
-    "787.4d218a1e.chunk.js.map": "/static/js/787.4d218a1e.chunk.js.map"
+    "main.css": "/ttec/static/css/main.742458e9.css",
+    "main.js": "/ttec/static/js/main.b26dd1c5.js",
+    "static/js/787.4d218a1e.chunk.js": "/ttec/static/js/787.4d218a1e.chunk.js",
+    "static/media/seder-pic-2.jpg": "/ttec/static/media/seder-pic-2.68665b4beda6d7827ba7.jpg",
+    "static/media/speech.jpg": "/ttec/static/media/speech.51981cdf58c576eb9aba.jpg",
+    "static/media/logo-small.png": "/ttec/static/media/logo-small.ee1f1ccb5c9589e56413.png",
+    "static/media/morning-1.jpg": "/ttec/static/media/morning-1.29966ce728facf716d02.jpg",
+    "static/media/rabbi-rudner.jpg": "/ttec/static/media/rabbi-rudner.f4dfbc09ced2d9c69556.jpg",
+    "static/media/morning-2.jpg": "/ttec/static/media/morning-2.00d4a0f5830a230024c9.jpg",
+    "static/media/ttec-logo.png": "/ttec/static/media/ttec-logo.d5133fedd907f6476c2a.png",
+    "index.html": "/ttec/index.html",
+    "main.742458e9.css.map": "/ttec/static/css/main.742458e9.css.map",
+    "main.b26dd1c5.js.map": "/ttec/static/js/main.b26dd1c5.js.map",
+    "787.4d218a1e.chunk.js.map": "/ttec/static/js/787.4d218a1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7e97807.css",
-    "static/js/main.546bb8a1.js"
+    "static/css/main.742458e9.css",
+    "static/js/main.b26dd1c5.js"
   ]
 }
