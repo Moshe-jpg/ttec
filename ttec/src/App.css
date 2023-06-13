@@ -155,11 +155,8 @@ li {
 
 #home .home-container {
   width: 100%;
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  line-height: 1.5;
+  min-height: 50vh;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,24 +166,43 @@ li {
 }
 
 #home .home-container h1 {
-  font-size: 2.25rem;
-  margin-bottom: 15px;
-}
-
-#home .home-container h1 span {
   font-size: 2.7rem;
   color: var(--red);
 }
 
 #home .home-container h2 {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+#home .home-container h3 {
   font-size: 1.5rem;
 }
 
 /* home offers */
 
+#home .offers-area {
+  width: 100%;
+  background: url("./assets/seder-pic-2.jpg");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+#home .offers-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 25;
+}
+
 #home .offers-header-container {
   width: 100%;
-  background: var(--black);
+  /* background: var(--black); */
   text-align: center;
 }
 
@@ -194,11 +210,13 @@ li {
   color: var(--white);
   font-size: 2rem;
   margin: 50px 0;
+  position: relative;
+  z-index: 50;
 }
 
 #home .offers-container {
   width: 100%;
-  background: var(--black);
+  /* background: var(--black); */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -221,6 +239,7 @@ li {
   flex-direction: column;
   padding: 10px;
   text-align: center;
+  z-index: 50;
 }
 
 #home .offers-container .offer .offers-num-container {
@@ -233,7 +252,7 @@ li {
 
 #home .offers-container .offer div .offers-num {
   font-size: 2em;
-  color: rgba(246, 9, 9, 0.2);
+  color: rgba(246, 9, 9, 0.4);
   pointer-events: none;
   z-index: 25;
   letter-spacing: 0;
@@ -260,6 +279,7 @@ li {
 
 #home .offers-container p {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 #home .separation-line {
@@ -289,7 +309,7 @@ li {
   color: var(--white);
   background: var(--red);
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 5px;
   margin: 10vh 0;
 }
 
@@ -330,28 +350,26 @@ li {
 .testimonials-container .review-text {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   padding: 15px 20px;
   color: var(--white);
 }
 
-.testimonials-container .review-text h2 {
+.testimonials-container .review-text cite {
   font-size: 2.5rem;
-  color: var(--gold);
-}
-
-.testimonials-container .review-text q {
-  font-size: 2rem;
-}
-
-.testimonials-container .review-text q::before, .testimonials-container .review-text q::after {
   color: var(--red);
 }
 
-.testimonials-container cite {
-  font-size: 1.5rem;
+.testimonials-container .review-text q {
+  font-size: 1.7rem;
+}
+
+.testimonials-container .review-text q::before,
+.testimonials-container .review-text q::after {
+  color: var(--red);
 }
 
 .review-text q::before,
