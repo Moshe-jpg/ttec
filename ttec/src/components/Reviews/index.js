@@ -21,7 +21,7 @@ const Reviews = () => {
     },
     {
       reviewText:
-        "TTEC provided me with a warm Yeshiva environment and excellent rabbeim, and allowed be to complete my business degree in only four semesters. I honestly didn’t think it would be possible to continue to grow in learning the way that I did while completing my degree. For that I will be eternally grateful.",
+        "TTEC provided me with a warm Yeshiva environment and excellent rabbeim, and allowed me to complete my business degree in only four semesters. I honestly didn’t think it would be possible to continue to grow in learning the way that I did while completing my degree. For that I will be eternally grateful.",
       name: "Yehuda Biren",
     },
   ];

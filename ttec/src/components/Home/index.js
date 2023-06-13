@@ -145,7 +145,9 @@ const MosheList = () => {
   );
 };
 
-const Home = () => {
+const Home = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
   return (
     <section id="home">
       <div className="bg-container">
@@ -172,9 +174,31 @@ const Home = () => {
         </ul>
       </div>
       <div className="btn-container">
-        <button>Learn More About TTEC</button>
+        <button
+          onClick={() => {
+            setCurrentPage(pages[1]);
+          }}
+        >
+          Learn More About TTEC
+        </button>
       </div>
       <Reviews />
+      <div className="cta">
+        <header>
+          <h1 className="cta-header">
+            Earn A Degree While Staying True To Your Learning
+          </h1>
+        </header>
+        <div className="btn-container">
+          <button
+            onClick={() => {
+              setCurrentPage(pages[1]);
+            }}
+          >
+            Learn More About TTEC
+          </button>
+        </div>
+      </div>
     </section>
   );
 };
