@@ -3,7 +3,15 @@ import morningSeder from "../../assets/speech.jpg";
 import guysPic from "../../assets/guys-pic.jpg";
 import nightSeder2 from "../../assets/seder-pic-2.jpg";
 import rabbiOchs from "../../assets/rabbi-ochs.jpg";
-import skiingPic from "../../assets/skiing.jpg"
+import skiingPic from "../../assets/skiing.jpg";
+import rabbiRudner from "../../assets/rabbi-rudner.jpg";
+import rabbiOberstein from "../../assets/rabbi-oberstein-4.jpg";
+import rabbiRothenberg from "../../assets/rabbi-rothenberg.jpg";
+import rabbiBartfeld from "../../assets/rabbi-bartfeld.jpg";
+import rabbiErlanger from "../../assets/night-seder-north.jpg";
+import rabbiWarman from "../../assets/night-seder-north-2.jpg";
+import rabbiTessler from "../../assets/seder-pic-2.jpg";
+import yaakovSmith from "../../assets/rabbi-rudner-4.jpg";
 
 const About = () => {
   //  Goals, Rebbeim bios, History, Media mentions
@@ -14,21 +22,21 @@ const About = () => {
       headerText: "Morning Seder",
       text: "Located in Viewmount Shul, we begin with 8:30 Shachris, followed by breakfast & a 30 minute shiur on Shaarei Teshuva. Afterwards, we split up into Chavrusas & learn Gemara until Shiur is given by Rabbi Rudner from 12pm until 12:30pm.",
       imgSrc: morningSeder,
-      altTag: "De Finibus Bonorum et Malorum",
+      altTag: "Morning Seder",
     },
     {
       direction: "row-reverse",
       headerText: "Accredited Studies",
       text: "Participants earn up to 60 credits from TRI for their Beis Medrash learning & Bichinos. In the afternoon Mr. Yaakov Smith oversees university studies while the students work on their online courses from SUNY (Empire State University). Some degree options include Accounting, Business, Law, Medicine, & Liberal Arts. ",
       imgSrc: guysPic,
-      altTag: "De Finibus Bonorum et Malorum",
+      altTag: "Accredited Studies",
     },
     {
       direction: "row",
       headerText: "Night Seder",
       text: "TTEC offers flexibility for Bochurim from all parts of the city. There are 3 night seder locations, they're located in Viewmount Shul, Agudah North (Bathurst & Wilson), & in Thornhill at Kollel Ohr Yosef. Night Seder usually consists of Gemara & Parsha, & is run by some of the city's finest Rebbeim.",
       imgSrc: nightSeder2,
-      altTag: "De Finibus Bonorum et Malorum",
+      altTag: "Night Seder",
     },
 
     {
@@ -36,14 +44,14 @@ const About = () => {
       headerText: "Guest Speakers",
       text: "בית מדרש מעין התורה is host to some of the best speakers & Rabbanim. We've had the pleasure of being addressed by Rav Shlomo Miller, Rav Mordechai Ochs, Rav Moshe Mordechai Lowe, Rav Dovid Pam, Rabbi Dr. Akiva Tatz, Rav Eliezer Breitowitz, & Rav Yoir Adler, to name a few.",
       imgSrc: rabbiOchs,
-      altTag: "De Finibus Bonorum et Malorum",
+      altTag: "Guest Speakers",
     },
     {
       direction: "row",
       headerText: "Shabbatons & Trips",
       text: "At different points during the year, בית מדרש מעין התורה arranges elevating trips, Mesibas, & Shabbatons. This includes Shabbos at the cottage, skiing trips, Chanukah & Purim Mesibas, & much more. Such events provide the bochurim with opportunities to bond with each other & with the rabbeim.",
       imgSrc: skiingPic,
-      altTag: "De Finibus Bonorum et Malorum",
+      altTag: "Shabbatons & Trips",
     },
     // {
     //   direction: "row-reverse",
@@ -54,9 +62,60 @@ const About = () => {
     // },
   ];
 
+  const rabbiArray = [
+    {
+      name: "Rabbi Shaya Rudner",
+      imgSrc: rabbiRudner,
+      altTag: "Rabbi Shaya Rudner",
+      description: "Maggid Shiur",
+    },
+    {
+      name: "Rabbi Avraham Oberstein",
+      imgSrc: rabbiOberstein,
+      altTag: "Rabbi Avraham Oberstein",
+      description: "Menahel",
+    },
+    {
+      name: "Rabbi Meyer Rothenberg",
+      imgSrc: rabbiRothenberg,
+      altTag: "Rabbi Meyer Rothenberg",
+      description: "Morning Seder Rebbi",
+    },
+    {
+      name: "Rabbi Eli Bartfeld",
+      imgSrc: rabbiBartfeld,
+      altTag: "Rabbi Eli Bartfeld",
+      description: "Morning Seder Rebbi",
+    },
+    {
+      name: "Rabbi Yakov Erlanger",
+      imgSrc: rabbiErlanger,
+      altTag: "Rabbi Yakov Erlanger",
+      description: "Night Seder Rebbi",
+    },
+    {
+      name: "Rav Dovid Warman",
+      imgSrc: rabbiWarman,
+      altTag: "Rav Dovid Warman",
+      description: "Night Seder Rebbi",
+    },
+    {
+      name: "Rabbi Netanel Tessler",
+      imgSrc: rabbiTessler,
+      altTag: "Rabbi Netanel Tessler",
+      description: "Night Seder Rebbi",
+    },
+    {
+      name: "Mr. Yaakov Smith",
+      imgSrc: yaakovSmith,
+      altTag: "Mr. Yaakov Smith",
+      description: "Academic Administrator",
+    },
+  ];
+
   return (
     <section id="about">
-      <header>
+      <header className="about-header-container">
         <h1 className="about-header">
           About <span>בית מדרש מעין התורה</span>
         </h1>
@@ -84,6 +143,20 @@ const About = () => {
           })}
         </ul>
       </div>
+      <header className="about-rebbeim-container">
+        <h1 className="rebbeim-header">Meet Our Faculty</h1>
+      </header>
+      <ul className="card-container">
+        {rabbiArray.map((rabbiCard, i) => {
+          return (
+            <li key={i} className="card">
+              <h4 className="name">{rabbiCard.name}</h4>
+              <img src={rabbiCard.imgSrc} alt={rabbiCard.altTag}></img>
+              <h5 className="desc">{rabbiCard.description}</h5>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };

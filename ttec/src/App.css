@@ -18,7 +18,7 @@
   --white: #ffffff;
   --off-white: #f5efe7;
   --grey: #bfccb5;
-  --red: #D21312;
+  --red: #d21312;
   --light-transparent: rgba(255, 255, 255, 0.25);
   --dark-transparent: rgba(0, 0, 0, 0.25);
 }
@@ -175,10 +175,11 @@ li {
   text-align: center;
 }
 
-#home .home-container h1 , #home .home-container h2 , #home .home-container h3 {
+#home .home-container h1,
+#home .home-container h2,
+#home .home-container h3 {
   overflow: hidden;
 }
-
 
 #home .home-container h1 {
   font-size: 2.7rem;
@@ -463,18 +464,18 @@ li {
   justify-content: flex-start;
 }
 
-#about header {
+#about .about-header-container {
   width: 100%;
   text-align: center;
   margin-top: 20vh;
   padding: 0 25px;
 }
 
-#about header h1 {
+#about .about-header-container h1 {
   font-size: 2.5rem;
 }
 
-#about header h1 span {
+#about .about-header-container h1 span {
   font-size: 2.7rem;
   color: var(--red);
 }
@@ -496,6 +497,7 @@ li {
 
 #about .about-container {
   width: 100%;
+  max-width: 1400px;
 }
 
 #about .about-container .about-item {
@@ -514,7 +516,7 @@ li {
   flex-direction: row-reverse;
 }
 
-#about .about-container .text-container, 
+#about .about-container .text-container,
 #about .about-container .img-container {
   height: 80vh;
 }
@@ -547,9 +549,67 @@ li {
   align-items: center;
   justify-content: center;
   width: 50%;
+  overflow: hidden;
 }
 
 #about .about-container .img-container img {
   width: 100%;
   border-radius: 5px;
+}
+
+/* about rebbeim area */
+
+#about .about-rebbeim-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20vh;
+  padding: 0 25px;
+}
+
+#about .about-rebbeim-container h1 {
+  font-size: 2.5rem;
+}
+
+#about .card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#about .card-container .card {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: var(--white);
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--black);
+}
+
+#about .card-container .card h4 {
+  width: 100%;
+  padding: 0 5px;
+  font-size: 1.25rem;
+  color: var(--red);
+  text-align: center;
+}
+
+#about .card-container .card img {
+  width: 100%;
+  max-height: 50%;
+  /* margin: 30px 0; */
+}
+
+#about .card-container .card h5 {
+  width: 100%;
+  padding: 0 5px;
+  font-size: 1rem;
+  color: var(--black);
+  text-align: center;
 }
