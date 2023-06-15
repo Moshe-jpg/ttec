@@ -13,10 +13,10 @@ function App() {
       name: "About",
     },
     {
-      name: "Info",
+      name: "Gallery",
     },
     {
-      name: "Gallery",
+      name: "Tuition",
     },
     {
       name: "Tests",

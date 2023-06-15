@@ -12,8 +12,11 @@ import rabbiErlanger from "../../assets/night-seder-north.jpg";
 import rabbiWarman from "../../assets/night-seder-north-2.jpg";
 import rabbiTessler from "../../assets/seder-pic-2.jpg";
 import yaakovSmith from "../../assets/rabbi-rudner-4.jpg";
+import arrow from "../../assets/arrow.png";
 
-const About = () => {
+const About = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
   //  Goals, Rebbeim bios, History, Media mentions
 
   const AboutArray = [
@@ -156,6 +159,65 @@ const About = () => {
             </li>
           );
         })}
+      </ul>
+      <header className="history-header-container">
+        <h1 className="history-header">How We Started</h1>
+      </header>
+      <p className="history">
+        The sun peeked through the dense foliage, casting a warm golden glow on
+        the forest floor. Birds chirped merrily, their melodies filling the air
+        with a symphony of nature's orchestra. A gentle breeze rustled the
+        leaves, creating a soothing whisper that danced among the trees.
+        <br></br>
+        <br></br>
+        The scent of fresh earth mingled with the fragrance of wildflowers,
+        enveloping the senses in a tapestry of natural aromas. In this tranquil
+        haven, time seemed to slow down, inviting one to pause, breathe, and
+        appreciate the beauty of the world around them
+      </p>
+      <div className="btn-container">
+        <button
+          onClick={() => {
+            setCurrentPage(pages[3]);
+          }}
+        >
+          Sign Up For TTEC
+        </button>
+      </div>
+      <header className="media-header-container">
+        <h1 className="media-header">Check Out Our Mentions</h1>
+      </header>
+      <ul className="media-mentions-container">
+        <li className="mention">
+          <a href="">
+            <p>Mishpacha Magazine </p>
+            <img src={arrow}></img>
+          </a>
+        </li>
+        <li className="mention">
+          <a href="">
+            <p>Mishpacha Magazine </p>
+            <img src={arrow}></img>
+          </a>
+        </li>
+        <li className="mention">
+          <a href="">
+            <p>Mishpacha Magazine </p>
+            <img src={arrow}></img>
+          </a>
+        </li>
+        <li className="mention">
+          <a href="">
+            <p>Mishpacha Magazine </p>
+            <img src={arrow}></img>
+          </a>
+        </li>
+        <li className="mention">
+          <a href="">
+            <p>Mishpacha Magazine </p>
+            <img src={arrow}></img>
+          </a>
+        </li>
       </ul>
     </section>
   );

@@ -613,3 +613,89 @@ li {
   color: var(--black);
   text-align: center;
 }
+
+#about .history-header-container {
+  width: 100%;
+  text-align: center;
+  margin: 20vh;
+  padding: 0 25px;
+}
+
+#about .history-header-container h1 {
+  font-size: 2.5rem;
+}
+
+#about .history {
+  width: 100%;
+  text-align: center;
+  padding: 0 25px 20vh;
+  font-size: 1.35rem;
+}
+
+#about .btn-container {
+  width: 100%;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .btn-container button {
+  font-size: 2rem;
+  color: var(--white);
+  background: var(--red);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20vh 0;
+}
+
+#about .media-header-container {
+  width: 100%;
+  text-align: center;
+  margin: 20vh 0 0;
+  padding: 0 25px;
+}
+
+#about .media-header-container h1 {
+  font-size: 2.5rem;
+}
+
+#about .media-mentions-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20vh 0;
+}
+
+#about .mention {
+  margin: 10px;
+}
+
+#about .mention a {
+  min-width: 100px;
+  max-width: 250px;
+  height: 55px;
+  color: var(--white);
+  background: var(--red);
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#about .mention a:hover img {
+  transform: rotate(0) scale(1.2);
+}
+
+#about .mention img {
+  width: 30px;
+  transform: rotate(-90deg);
+  transition: 0.5s ease-in-out;
+  margin-left: 15px;
+}

@@ -27,10 +27,10 @@ const Navbar = (props) => {
           About
         </li>
         <li className="nav-link" onClick={() => {}}>
-          Info
+          Gallery
         </li>
         <li className="nav-link" onClick={() => {}}>
-          Gallery
+          Tuition
         </li>
         <li className="nav-link" onClick={() => {}}>
           Contact
