@@ -26,10 +26,20 @@ const Navbar = (props) => {
         >
           About
         </li>
-        <li className="nav-link" onClick={() => {}}>
+        <li
+          className="nav-link"
+          onClick={() => {
+            setCurrentPage(pages[2]);
+          }}
+        >
           Gallery
         </li>
-        <li className="nav-link" onClick={() => {}}>
+        <li
+          className="nav-link"
+          onClick={() => {
+            setCurrentPage(pages[3]);
+          }}
+        >
           Tuition
         </li>
         <li className="nav-link" onClick={() => {}}>

@@ -17,8 +17,6 @@ import arrow from "../../assets/arrow.png";
 const About = (props) => {
   const { pages = [], setCurrentPage } = props;
 
-  //  Goals, Rebbeim bios, History, Media mentions
-
   const AboutArray = [
     {
       direction: "row",
