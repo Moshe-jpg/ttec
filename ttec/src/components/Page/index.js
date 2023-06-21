@@ -4,7 +4,7 @@ import About from "../About";
 import Gallery from "../Gallery";
 import Tuition from "../Tuition";
 // import Tests from "../Tests";
-// import Applications from "../Applications";
+import Applications from "../Applications";
 // import Contact from "../Contact";
 // import Donate from "../Donate";
 import PageContent from "../PageContent";
@@ -17,22 +17,21 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
     } else if (currentPage.name === "About") {
       document.title = "About";
       return <About pages={pages} setCurrentPage={setCurrentPage} />;
-    } 
-    else if (currentPage.name === "Gallery") {
+    } else if (currentPage.name === "Gallery") {
       document.title = "Gallery";
       return <Gallery />;
-    }
-     else if (currentPage.name === "Tuition") {
+    } else if (currentPage.name === "Tuition") {
       document.title = "Tuition";
       return <Tuition />;
-    } 
+    } else if (currentPage.name === "Applications") {
+      document.title = "Applications";
+      return <Applications />;
+    }
     // else if (currentPage.name === "Tests") {
     //   document.title = "Tests";
     //   return <Tests />;
-    // } else if (currentPage.name === "Applications") {
-    //   document.title = "Applications";
-    //   return <Applications />;
-    // } else if (currentPage.name === "Tuition") {
+    // }
+    // else if (currentPage.name === "Tuition") {
     //   document.title = "Tuition";
     //   return <Tuition />;
     // } else if (currentPage.name === "Contact") {

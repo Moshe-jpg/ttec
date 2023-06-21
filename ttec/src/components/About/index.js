@@ -187,33 +187,33 @@ const About = (props) => {
       </header>
       <ul className="media-mentions-container">
         <li className="mention">
-          <a href="">
+          <a href="/">
             <p>Mishpacha Magazine </p>
-            <img src={arrow}></img>
+            <img src={arrow} alt="mishpacha link"></img>
           </a>
         </li>
         <li className="mention">
-          <a href="">
+          <a href="/">
             <p>Mishpacha Magazine </p>
-            <img src={arrow}></img>
+            <img src={arrow} alt="mishpacha link"></img>
           </a>
         </li>
         <li className="mention">
-          <a href="">
+          <a href="/">
             <p>Mishpacha Magazine </p>
-            <img src={arrow}></img>
+            <img src={arrow} alt="mishpacha link"></img>
           </a>
         </li>
         <li className="mention">
-          <a href="">
+          <a href="/">
             <p>Mishpacha Magazine </p>
-            <img src={arrow}></img>
+            <img src={arrow} alt="mishpacha link"></img>
           </a>
         </li>
         <li className="mention">
-          <a href="">
+          <a href="/">
             <p>Mishpacha Magazine </p>
-            <img src={arrow}></img>
+            <img src={arrow} alt="mishpacha link"></img>
           </a>
         </li>
       </ul>

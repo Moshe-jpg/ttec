@@ -699,3 +699,66 @@ li {
   transition: 0.5s ease-in-out;
   margin-left: 15px;
 }
+
+/* application component */
+
+#application .application-header {
+  width: 100%;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 20vh 0 8vh;
+}
+
+#application .application-container {
+  width: 100%;
+  min-height: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 0 25px ;
+}
+
+#application .application-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: left;
+  width: 500px;
+  height: 100%;
+  line-height: 1.5;
+}
+
+#application .application-info h3 {
+  width: 100%;
+}
+
+#application .application-info ol, #application .application-info ul {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+#application .application-form {
+  width: 500px;
+  height: 100%;
+}
+
+#application .inputBox-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#application .inputBox-container .inputBox {
+  width: 50%;
+}

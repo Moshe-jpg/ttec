@@ -19,13 +19,10 @@ function App() {
       name: "Tuition",
     },
     {
-      name: "Tests",
-    },
-    {
       name: "Applications",
     },
     {
-      name: "Tuition",
+      name: "Tests",
     },
     {
       name: "Contact",
