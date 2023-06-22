@@ -13,6 +13,7 @@ const ApplicationForm = () => {
     contactNumberInput.name = "contact_number";
     contactNumberInput.value = contact_number;
     form.current.appendChild(contactNumberInput);
+    const formBtn = document.querySelector(".inputBoxBtn");
     // send the form with the updated form.current
     emailjs
       .sendForm(
@@ -24,11 +25,31 @@ const ApplicationForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          let inputs = document.querySelectorAll("input");
-          inputs.forEach((input) => (input.value = ""));
+          if (result.text === "OK") {
+            let inputs = document.querySelectorAll("input");
+            inputs.forEach((input) => {
+              input.value = "";
+              input.style.borderBottom = "1px solid var(--green)";
+            });
+            formBtn.style.background = "var(--green)";
+            formBtn.textContent = "Message Sent";
+            setTimeout(() => {
+              formBtn.style.background = "var(--red)";
+              formBtn.textContent = "Submit";
+              inputs.forEach((input) => {
+                input.value = "";
+                input.style.borderBottom = "1px solid var(--red)";
+              });
+            }, 5000);
+          }
         },
         (error) => {
           console.log(error.text);
+          formBtn.textContent = "Please Try Again";
+          input.value = "";
+          setTimeout(() => {
+            formBtn.textContent = "Submit";
+          }, 5000);
         }
       );
   };
@@ -49,7 +70,7 @@ const ApplicationForm = () => {
             type="email"
             name="user_email"
             required="required"
-            placeholder="* Email Address"
+            placeholder="* Email"
           />
         </div>
         <div className="inputBox">
@@ -98,10 +119,9 @@ const ApplicationForm = () => {
             name="message"
             required="required"
             className="inputBox-message-input"
-            placeholder="* Why is TTEC a fit for you?..."
+            placeholder="* Why is TTEC a fit for you?"
           />
         </div>
-        <div className="spacer"></div>
       </div>
       <div className="inputBoxBtn-Container">
         <button

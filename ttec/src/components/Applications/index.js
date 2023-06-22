@@ -4,6 +4,7 @@ import ApplicationForm from "../ApplicationForm";
 const Applications = () => {
   return (
     <section id="application">
+        <div className="overlay"></div>
       <header>
         <h1 className="application-header">Apply To TTEC</h1>
       </header>

@@ -116,6 +116,9 @@ const About = (props) => {
 
   return (
     <section id="about">
+      {/* <div className="bubble-one"></div>
+      <div className="bubble-two"></div>
+      <div className="bubble-three"></div> */}
       <header className="about-header-container">
         <h1 className="about-header">
           About <span>בית מדרש מעין התורה</span>
@@ -176,7 +179,7 @@ const About = (props) => {
       <div className="btn-container">
         <button
           onClick={() => {
-            setCurrentPage(pages[3]);
+            setCurrentPage(pages[4]);
           }}
         >
           Sign Up For TTEC

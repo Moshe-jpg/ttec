@@ -19,12 +19,18 @@
   --off-white: #f5efe7;
   --grey: #bfccb5;
   --red: #d21312;
+  --green: #0bbb1a;
   --light-transparent: rgba(255, 255, 255, 0.25);
   --dark-transparent: rgba(0, 0, 0, 0.25);
+  --linear-background: repeating-linear-gradient(
+    45deg,
+    var(--light-transparent),
+    var(--dark-transparent) 1px
+  );
 }
 
 body {
-  background: var(--off-white);
+  background: var(--linear-background);
 }
 
 section {
@@ -35,12 +41,13 @@ section {
   justify-content: center;
   flex-direction: column;
   z-index: 10;
-  background: var(--off-white);
+  background: var(--linear-background);
 }
 
 a,
 button,
-li {
+li,
+input {
   all: unset;
 }
 
@@ -106,6 +113,10 @@ li {
 }
 
 /* home component */
+
+#home {
+  background: var(--linear-background);
+}
 
 #home .bg-container {
   display: grid;
@@ -307,7 +318,7 @@ li {
 
 #home .btn-container {
   width: 100%;
-  background: var(--off-white);
+  background: var(--linear-background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +337,7 @@ li {
 
 .testimonials-container {
   width: 100%;
-  background: var(--off-white);
+  background: var(--linear-background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -448,6 +459,8 @@ li {
   font-size: 2.5rem;
   color: var(--white);
   margin: 50px 0 0;
+  text-align: center;
+  padding: 0 25px;
 }
 
 #home .cta .btn-container {
@@ -460,8 +473,32 @@ li {
   margin: 0;
 }
 
+/* #about .bubble-one, #about .bubble-two, #about .bubble-three {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(246, 9, 9, 0.4);
+  z-index: 5;
+}
+
+#about .bubble-one {
+  left: -150px;
+  top: 10vh;
+}
+
+#about .bubble-two {
+  right: -150px;
+  bottom: 10vh;
+}
+
+#about .bubble-three {
+  top: 50%;
+} */
+
 #about {
   justify-content: flex-start;
+  background: var(--linear-background);
 }
 
 #about .about-header-container {
@@ -469,6 +506,7 @@ li {
   text-align: center;
   margin-top: 20vh;
   padding: 0 25px;
+  z-index: 50;
 }
 
 #about .about-header-container h1 {
@@ -486,6 +524,7 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 50;
 }
 
 #about .about-container-header {
@@ -564,6 +603,7 @@ li {
   text-align: center;
   margin-bottom: 20vh;
   padding: 0 25px;
+  z-index: 50;
 }
 
 #about .about-rebbeim-container h1 {
@@ -577,6 +617,7 @@ li {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: 50;
 }
 
 #about .card-container .card {
@@ -619,6 +660,7 @@ li {
   text-align: center;
   margin: 20vh;
   padding: 0 25px;
+  z-index: 50;
 }
 
 #about .history-header-container h1 {
@@ -630,6 +672,7 @@ li {
   text-align: center;
   padding: 0 25px 20vh;
   font-size: 1.35rem;
+  z-index: 50;
 }
 
 #about .btn-container {
@@ -638,6 +681,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 50;
 }
 
 #about .btn-container button {
@@ -654,6 +698,7 @@ li {
   text-align: center;
   margin: 20vh 0 0;
   padding: 0 25px;
+  z-index: 50;
 }
 
 #about .media-header-container h1 {
@@ -668,6 +713,7 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 20vh 0;
+  z-index: 50;
 }
 
 #about .mention {
@@ -702,11 +748,33 @@ li {
 
 /* application component */
 
+#application {
+  background: url("./assets/seder-pic-3.jpg");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+#application .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+#application header {
+  z-index: 50;
+}
+
 #application .application-header {
   width: 100%;
   text-align: center;
   width: 100%;
   font-size: 2.5rem;
+  color: var(--white);
   margin: 20vh 0 8vh;
 }
 
@@ -717,7 +785,9 @@ li {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  padding: 0 25px ;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  z-index: 50;
 }
 
 #application .application-info {
@@ -727,15 +797,21 @@ li {
   flex-direction: column;
   text-align: left;
   width: 500px;
-  height: 100%;
+  min-height: 450px;
   line-height: 1.5;
+  margin: 0 25px 50px;
+  background: rgba(250, 250, 250, 0.75);
+  color: var(--black);
+  padding: 15px;
+  border-radius: 15px;
 }
 
 #application .application-info h3 {
   width: 100%;
 }
 
-#application .application-info ol, #application .application-info ul {
+#application .application-info ol,
+#application .application-info ul {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -746,19 +822,55 @@ li {
 
 #application .application-form {
   width: 500px;
-  height: 100%;
+  min-height: 450px;
+  margin: 0 25px 50px;
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--white);
+  padding: 15px;
+  border-radius: 15px;
 }
 
 #application .inputBox-container {
   width: 100%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  min-height: 380px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
 }
 
 #application .inputBox-container .inputBox {
-  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#application .inputBox-container .inputBox input {
+  width: 90%;
+  height: 60%;
+  border-bottom: 1px solid var(--red);
+  font-size: 12px;
+}
+
+#application .inputBox-container .inputBox input::placeholder {
+  color: var(--white);
+  font-size: 12px;
+}
+
+#application .inputBoxBtn-Container {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+#application .inputBoxBtn-Container .inputBoxBtn {
+  background: var(--red);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
 }
