@@ -1,5 +1,6 @@
 import React from "react";
 import arrow from "../../assets/arrow.png";
+import mgLogo from "../../assets/moshe-gadol-logo.webp";
 
 const Footer = (props) => {
   const { pages = [], setCurrentPage } = props;
@@ -26,19 +27,21 @@ const Footer = (props) => {
           </li>
           <li>
             <a href="mailto:ttecyeshiva@gmail.com">
-              Email: ttecyeshiva@gmail.com
+              <p>Email: ttecyeshiva@gmail.com</p>
+              <img src={arrow} alt="email"></img>
             </a>
-            <img src={arrow} alt="email"></img>
           </li>
           <li>
-            <a href="tel:647-648-2845">Phone: 647-648-2845</a>
-            <img src={arrow} alt="phone"></img>
+            <a href="tel:647-648-2845">
+              <p>Phone: 647-648-2845</p>
+              <img src={arrow} alt="phone"></img>
+            </a>
           </li>
           <li>
             <a href="https://goo.gl/maps/JfwxE36Cr4cnVY297">
-              Mailing Address: 461 York Hill Blvd, Thornhill, ON L4J 3C6
+              <p>Mailing Address: 461 York Hill Blvd, Thornhill, ON L4J 3C6</p>
+              <img src={arrow} alt="mailing address"></img>
             </a>
-            <img src={arrow} alt="mailing address"></img>
           </li>
         </ul>
         <address>
@@ -54,9 +57,9 @@ const Footer = (props) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                1 Viewmount Ave, North York, ON M6B
+                <p>1 Viewmount Ave, North York, ON M6B</p>
+                <img src={arrow} alt="viewmount/south location"></img>
               </a>
-              <img src={arrow} alt="viewmount/south location"></img>
             </li>
             <li>
               <a
@@ -64,9 +67,9 @@ const Footer = (props) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                129 McGillivray Ave, North York, ON M5M
+                <p>129 McGillivray Ave, North York, ON M5M</p>
+                <img src={arrow} alt="Agudah location"></img>
               </a>
-              <img src={arrow} alt="Agudah location"></img>
             </li>
             <li>
               <a
@@ -74,12 +77,94 @@ const Footer = (props) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                601 Clark Ave W, Thornhill, ON L4J 8E1
+                <p>601 Clark Ave W, Thornhill, ON L4J 8E1</p>
+                <img src={arrow} alt="Thornhill/North location"></img>
               </a>
-              <img src={arrow} alt="Thornhill/North location"></img>
             </li>
           </ul>
         </address>
+      </div>
+      <div className="footer-links-outer-container">
+        <ul className="footer-links-container">
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[0]);
+              }}
+            >
+              Home
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[1]);
+              }}
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[2]);
+              }}
+            >
+              Gallery
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[3]);
+              }}
+            >
+              Tuition
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[4]);
+              }}
+            >
+              Apply
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[5]);
+              }}
+            >
+              Tests
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[6]);
+              }}
+            >
+              Contact
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[7]);
+              }}
+            >
+              Donate
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div className="website-container">
+        <p>Website created by</p>&nbsp;
+        <a href="www.gadol.dev">
+          <img src={mgLogo} alt="Moshe Gadol Portfolio Site"></img>
+        </a>
       </div>
     </footer>
   );

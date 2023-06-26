@@ -3,44 +3,47 @@ import Home from "../Home";
 import About from "../About";
 import Gallery from "../Gallery";
 import Tuition from "../Tuition";
-// import Tests from "../Tests";
 import Applications from "../Applications";
-// import Contact from "../Contact";
-// import Donate from "../Donate";
+import Tests from "../Tests";
+import Contact from "../Contact";
+import Donate from "../Donate";
 import PageContent from "../PageContent";
 
 const Page = ({ currentPage, setCurrentPage, pages }) => {
   const renderPage = () => {
     if (currentPage.name === "Home") {
-      document.title = "Home";
+      document.title =
+        "Home | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <Home pages={pages} setCurrentPage={setCurrentPage} />;
     } else if (currentPage.name === "About") {
-      document.title = "About";
+      document.title =
+        "About | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <About pages={pages} setCurrentPage={setCurrentPage} />;
     } else if (currentPage.name === "Gallery") {
-      document.title = "Gallery";
+      document.title =
+        "Gallery | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <Gallery />;
     } else if (currentPage.name === "Tuition") {
-      document.title = "Tuition";
+      document.title =
+        "Tuition | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <Tuition />;
     } else if (currentPage.name === "Applications") {
-      document.title = "Applications";
+      document.title =
+        "Applications | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <Applications />;
+    } else if (currentPage.name === "Tests") {
+      document.title =
+        "Tests | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
+      return <Tests />;
+    } else if (currentPage.name === "Contact") {
+      document.title =
+        "Contact | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
+      return <Contact />;
+    } else if (currentPage.name === "Donate") {
+      document.title =
+        "Donate | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
+      return <Donate />;
     }
-    // else if (currentPage.name === "Tests") {
-    //   document.title = "Tests";
-    //   return <Tests />;
-    // }
-    // else if (currentPage.name === "Tuition") {
-    //   document.title = "Tuition";
-    //   return <Tuition />;
-    // } else if (currentPage.name === "Contact") {
-    //   document.title = "Contact";
-    //   return <Contact />;
-    // } else if (currentPage.name === "Donate") {
-    //   document.title = "Donate";
-    //   return <Donate />;
-    // }
   };
 
   return (

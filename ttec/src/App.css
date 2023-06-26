@@ -630,7 +630,6 @@ input {
   background: var(--white);
   margin: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px var(--black);
 }
 
 #about .card-container .card h4 {
@@ -894,15 +893,13 @@ input:-webkit-autofill {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  background: var(--black);
+  background: var(--linear-background);
   color: var(--white);
 }
 
 #footer .footer-header-container {
   width: 100%;
   text-align: center;
-  background: var(--linear-background);
-  background-color: var(--white);
   color: var(--black);
 }
 
@@ -932,6 +929,7 @@ input:-webkit-autofill {
   align-items: center;
   justify-content: c;
   grid-template-columns: 50% 50%;
+  background: var(--black);
 }
 
 #footer .footer-info-container .contact-container,
@@ -948,7 +946,7 @@ input:-webkit-autofill {
   color: var(--red);
 }
 
-#footer li {
+#footer li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -956,7 +954,7 @@ input:-webkit-autofill {
 }
 
 #footer li img {
-  width: 30px;
+  width: 1.75rem;
   transform: rotate(-90deg);
   transition: 0.5s ease-in-out;
   margin-left: 15px;
@@ -966,4 +964,53 @@ input:-webkit-autofill {
 
 #footer li:hover img {
   transform: rotate(0) scale(1.2);
+}
+
+#footer .footer-links-outer-container {
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+}
+
+#footer .footer-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 25px;
+  margin: 5vh auto;
+  border-radius: 25px;
+  background: var(--red);
+  width: min-content;
+}
+
+#footer .footer-links-container li {
+  margin: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#footer .website-container {
+  width: 100%;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 5vh;
+}
+
+#footer .website-container p {
+  font-size: 1.25rem;
+}
+
+#footer .website-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+
+#footer .website-container a img {
+  height: 100%;
 }
