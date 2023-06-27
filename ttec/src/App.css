@@ -894,6 +894,7 @@ input:-webkit-autofill {
 
 #contact .contact-page-container {
   width: 100%;
+  /* margin: 0 0 20vh; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -998,10 +999,14 @@ input:-webkit-autofill {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 25px;
+  padding: 10vh 25px;
   place-items: center;
   justify-content: space-around;
   grid-gap: 25px;
+  background: url("./assets/ttec-gathering.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 #contact .maps-container iframe {
@@ -1052,6 +1057,7 @@ input:-webkit-autofill {
   color: var(--white);
   padding: 10px 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #footer .footer-info-container {
@@ -1082,6 +1088,7 @@ input:-webkit-autofill {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  cursor: pointer;
 }
 
 #footer li img {

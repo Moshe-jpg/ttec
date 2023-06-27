@@ -46,7 +46,6 @@ const ContactForm = () => {
         (error) => {
           console.log(error.text);
           formBtn.textContent = "Please Try Again";
-          input.value = "";
           setTimeout(() => {
             formBtn.textContent = "Submit";
           }, 5000);

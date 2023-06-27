@@ -190,9 +190,9 @@ const About = (props) => {
       </header>
       <ul className="media-mentions-container">
         <li className="mention">
-          <a href="/">
-            <p>Mishpacha Magazine </p>
-            <img src={arrow} alt="mishpacha link"></img>
+          <a href="https://issuu.com/shloim/docs/issue_256/56">
+            <p>Community Link </p>
+            <img src={arrow} alt="Community link"></img>
           </a>
         </li>
         <li className="mention">

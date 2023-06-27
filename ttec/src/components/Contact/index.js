@@ -34,6 +34,7 @@ const Contact = () => {
           allowFullScreen={""}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Google maps Viewmount location"
         ></iframe>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.7939906706224!2d-79.4326346!3d43.7356063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b325c25a5b869%3A0x9ce92114d211a78e!2sAgudath%20Israel%20Congregation%20(%22Agudah%20North%22)!5e0!3m2!1sen!2sca!4v1687819094710!5m2!1sen!2sca"
@@ -43,6 +44,7 @@ const Contact = () => {
           allowFullScreen={""}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Google maps Agudah North location"
         ></iframe>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.4793698712315!2d-79.44192629999999!3d43.8044152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2c4911d4c745%3A0xdd02e6f1d9c99197!2sKollel%20Ohr%20Yosef!5e0!3m2!1sen!2sca!4v1687819474743!5m2!1sen!2sca"
@@ -52,6 +54,7 @@ const Contact = () => {
           allowFullScreen={""}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Google maps Thornhill location"
         ></iframe>
       </div>
     </section>
