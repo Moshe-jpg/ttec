@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ttec/static/css/main.29b6adfa.css",
-    "main.js": "/ttec/static/js/main.769d4ba4.js",
+    "main.css": "/ttec/static/css/main.37f3b90f.css",
+    "main.js": "/ttec/static/js/main.2f7c9555.js",
     "static/js/787.4d218a1e.chunk.js": "/ttec/static/js/787.4d218a1e.chunk.js",
     "static/media/rabbi-ochs.jpg": "/ttec/static/media/rabbi-ochs.b5e9e243ce5eeb746157.jpg",
     "static/media/seder-pic-2.jpg": "/ttec/static/media/seder-pic-2.68665b4beda6d7827ba7.jpg",
@@ -11,6 +11,7 @@
     "static/media/chanuka-mesiba.jpg": "/ttec/static/media/chanuka-mesiba.8bdb6d30b73c0c213c84.jpg",
     "static/media/chavrusa.jpg": "/ttec/static/media/chavrusa.427078f50cecb3c5edcc.jpg",
     "static/media/rabbi-rothenberg.jpg": "/ttec/static/media/rabbi-rothenberg.1d4ec965820cb46ac371.jpg",
+    "static/media/seder-pic-3.jpg": "/ttec/static/media/seder-pic-3.c3f605e7856406fba6f2.jpg",
     "static/media/night-seder-2.jpg": "/ttec/static/media/night-seder-2.7d5105149b0f661b603a.jpg",
     "static/media/laining.jpg": "/ttec/static/media/laining.64c09180db966a105837.jpg",
     "static/media/rabbi-oberstein-4.jpg": "/ttec/static/media/rabbi-oberstein-4.7d0fabec56854f0b6816.jpg",
@@ -24,15 +25,16 @@
     "static/media/morning-2.jpg": "/ttec/static/media/morning-2.00d4a0f5830a230024c9.jpg",
     "static/media/ttec-logo.png": "/ttec/static/media/ttec-logo.d5133fedd907f6476c2a.png",
     "static/media/guys-pic.jpg": "/ttec/static/media/guys-pic.e7a004dc9ccb12fd00b5.jpg",
+    "static/media/moshe-gadol-logo.webp": "/ttec/static/media/moshe-gadol-logo.8632a20cf7efd0fe90ae.webp",
     "static/media/arrow.png": "/ttec/static/media/arrow.a047fe68b104ae4adae5.png",
     "static/media/rabbi-rudner-4.jpg": "/ttec/static/media/rabbi-rudner-4.221206048de33bacbca4.jpg",
     "index.html": "/ttec/index.html",
-    "main.29b6adfa.css.map": "/ttec/static/css/main.29b6adfa.css.map",
-    "main.769d4ba4.js.map": "/ttec/static/js/main.769d4ba4.js.map",
+    "main.37f3b90f.css.map": "/ttec/static/css/main.37f3b90f.css.map",
+    "main.2f7c9555.js.map": "/ttec/static/js/main.2f7c9555.js.map",
     "787.4d218a1e.chunk.js.map": "/ttec/static/js/787.4d218a1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29b6adfa.css",
-    "static/js/main.769d4ba4.js"
+    "static/css/main.37f3b90f.css",
+    "static/js/main.2f7c9555.js"
   ]
 }
