@@ -66,13 +66,13 @@ const Navbar = (props) => {
         >
           Contact
         </li>
-        <li
-          className="nav-link last-nav-link"
-          onClick={() => {
-            setCurrentPage(pages[7]);
-          }}
-        >
-          Donate
+        <li className="nav-link last-nav-link">
+          <a
+            className="dbox-donation-button"
+            href="https://donorbox.org/make-a-donation-230?default_interval=o&hide_donation_meter=true"
+          >
+            Donate
+          </a>
         </li>
       </ul>
     </nav>

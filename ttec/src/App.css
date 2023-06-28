@@ -1018,6 +1018,11 @@ input:-webkit-autofill {
   grid-column: span 2;
 }
 
+/* donate component */
+
+#donate {
+  padding: 20vh 0 0;
+}
 
 
 /* footer component */
@@ -1037,6 +1042,7 @@ input:-webkit-autofill {
   width: 100%;
   text-align: center;
   color: var(--black);
+  padding-bottom: 10vh;
 }
 
 #footer .footer-header-container h4 {
@@ -1050,9 +1056,8 @@ input:-webkit-autofill {
   margin-bottom: 10vh;
 }
 
-#footer .footer-header-container button {
+#footer .footer-header-container a {
   font-size: 2rem;
-  margin: 0 0 30px;
   background: var(--red);
   color: var(--white);
   padding: 10px 15px;

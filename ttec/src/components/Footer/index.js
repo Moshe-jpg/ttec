@@ -10,13 +10,12 @@ const Footer = (props) => {
       <div className="footer-header-container">
         <h4>בית מדרש מעין התורה</h4>
         <h5>Toronto's Post Israel Beis Medrash</h5>
-        <button
-          onClick={() => {
-            setCurrentPage(pages[0]);
-          }}
+        <a
+          className="dbox-donation-button"
+          href="https://donorbox.org/make-a-donation-230?default_interval=o&hide_donation_meter=true"
         >
-          Make A Tax Deductible Donation
-        </button>
+          Make A Donation
+        </a>
       </div>
       <div className="footer-info-container">
         <ul className="contact-container">
@@ -150,13 +149,15 @@ const Footer = (props) => {
             </button>
           </li>
           <li>
-            <button
-              onClick={() => {
-                setCurrentPage(pages[7]);
+            <a
+              className="dbox-donation-button"
+              style={{
+                fontSize: "1.2rem",
               }}
+              href="https://donorbox.org/make-a-donation-230?default_interval=o&hide_donation_meter=true"
             >
               Donate
-            </button>
+            </a>
           </li>
         </ul>
       </div>

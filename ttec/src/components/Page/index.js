@@ -6,7 +6,6 @@ import Tuition from "../Tuition";
 import Applications from "../Applications";
 import Tests from "../Tests";
 import Contact from "../Contact";
-import Donate from "../Donate";
 import PageContent from "../PageContent";
 
 const Page = ({ currentPage, setCurrentPage, pages }) => {
@@ -39,10 +38,6 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
       document.title =
         "Contact | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <Contact />;
-    } else if (currentPage.name === "Donate") {
-      document.title =
-        "Donate | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
-      return <Donate />;
     }
   };
 
