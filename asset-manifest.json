@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ttec/static/css/main.49364250.css",
-    "main.js": "/ttec/static/js/main.1ac7384b.js",
+    "main.css": "/ttec/static/css/main.c69968b2.css",
+    "main.js": "/ttec/static/js/main.74797e84.js",
     "static/js/787.4d218a1e.chunk.js": "/ttec/static/js/787.4d218a1e.chunk.js",
     "static/media/rabbi-ochs.jpg": "/ttec/static/media/rabbi-ochs.b5e9e243ce5eeb746157.jpg",
     "static/media/seder-pic-2.jpg": "/ttec/static/media/seder-pic-2.68665b4beda6d7827ba7.jpg",
@@ -29,13 +29,14 @@
     "static/media/moshe-gadol-logo.webp": "/ttec/static/media/moshe-gadol-logo.8632a20cf7efd0fe90ae.webp",
     "static/media/arrow.png": "/ttec/static/media/arrow.a047fe68b104ae4adae5.png",
     "static/media/rabbi-rudner-4.jpg": "/ttec/static/media/rabbi-rudner-4.221206048de33bacbca4.jpg",
+    "static/media/menu.png": "/ttec/static/media/menu.d451b701d93ee1d2d09f.png",
     "index.html": "/ttec/index.html",
-    "main.49364250.css.map": "/ttec/static/css/main.49364250.css.map",
-    "main.1ac7384b.js.map": "/ttec/static/js/main.1ac7384b.js.map",
+    "main.c69968b2.css.map": "/ttec/static/css/main.c69968b2.css.map",
+    "main.74797e84.js.map": "/ttec/static/js/main.74797e84.js.map",
     "787.4d218a1e.chunk.js.map": "/ttec/static/js/787.4d218a1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49364250.css",
-    "static/js/main.1ac7384b.js"
+    "static/css/main.c69968b2.css",
+    "static/js/main.74797e84.js"
   ]
 }
