@@ -1360,6 +1360,10 @@ input:-webkit-autofill {
     margin: 0 0 50px;
   }
 
+  #application .application-info ol, #application .application-info ul {
+    align-items: center;
+  }
+
   #application .inputBox-container {
     grid-template-columns: 100%;
   }
