@@ -27,10 +27,14 @@ const images = [
   nsNorth2Img,
 ];
 
+
+const navGallery = () => window.innerWidth >= 999;
+
 const Gallery = () => (
   <ReactFullpage
     navigation
-    controlArrows={true}
+    responsive={400}
+    controlArrows={navGallery()}
     slidesNavigation={true}
     slidesNavPosition={"bottom"}
     keyboardScrolling={true}
@@ -58,3 +62,4 @@ const Gallery = () => (
 );
 
 export default Gallery;
+

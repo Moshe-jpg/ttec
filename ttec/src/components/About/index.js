@@ -65,52 +65,60 @@ const About = (props) => {
 
   const rabbiArray = [
     {
-      name: "Rabbi Shaya Rudner",
+      name: "Rabbi Avrohom Rudner",
       imgSrc: rabbiRudner,
       altTag: "Rabbi Shaya Rudner",
       description: "Maggid Shiur",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Rabbi Avraham Oberstein",
       imgSrc: rabbiOberstein,
       altTag: "Rabbi Avraham Oberstein",
       description: "Menahel",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Rabbi Meyer Rothenberg",
       imgSrc: rabbiRothenberg,
       altTag: "Rabbi Meyer Rothenberg",
       description: "Morning Seder Rebbi",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Rabbi Eli Bartfeld",
       imgSrc: rabbiBartfeld,
       altTag: "Rabbi Eli Bartfeld",
       description: "Morning Seder Rebbi",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Rabbi Yakov Erlanger",
       imgSrc: rabbiErlanger,
       altTag: "Rabbi Yakov Erlanger",
       description: "Night Seder Rebbi",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Rav Dovid Warman",
       imgSrc: rabbiWarman,
       altTag: "Rav Dovid Warman",
       description: "Night Seder Rebbi",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Rabbi Netanel Tessler",
       imgSrc: rabbiTessler,
       altTag: "Rabbi Netanel Tessler",
       description: "Night Seder Rebbi",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
     {
       name: "Mr. Yaakov Smith",
       imgSrc: yaakovSmith,
       altTag: "Mr. Yaakov Smith",
       description: "Academic Administrator",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin turpis vitae ex auctor, in viverra sapien posuere. Fusce tempus lacus metus, quis",
     },
   ];
 
@@ -155,8 +163,9 @@ const About = (props) => {
           return (
             <li key={i} className="card">
               <h4 className="name">{rabbiCard.name}</h4>
-              <img src={rabbiCard.imgSrc} alt={rabbiCard.altTag}></img>
               <h5 className="desc">{rabbiCard.description}</h5>
+              <img src={rabbiCard.imgSrc} alt={rabbiCard.altTag}></img>
+              <p className="bio">{rabbiCard.bio}</p>
             </li>
           );
         })}

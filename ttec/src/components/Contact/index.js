@@ -4,7 +4,7 @@ import ContactForm from "../ContactForm";
 const Contact = () => {
   return (
     <section id="contact">
-      <header>
+      <header className="contact-header">
         <h1>Reach Out To TTEC</h1>
       </header>
       <div className="contact-page-container">
@@ -26,6 +26,7 @@ const Contact = () => {
         <ContactForm />
       </div>
       <div className="maps-container">
+        <header className="maps-container-header"><h1>Locations</h1></header>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d92176.617998631!2d-79.5380358!3d43.7828361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33a878dc71b1%3A0x10f7ff8f8ac63f67!2sViewmount%20Shul%20(Congregation%20Toras%20Emes)!5e0!3m2!1sen!2sca!4v1687819098600!5m2!1sen!2sca"
           width="600"
