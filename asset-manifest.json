@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/ttec/static/css/main.aa6cea15.css",
-    "main.js": "/ttec/static/js/main.74797e84.js",
+    "main.css": "/ttec/static/css/main.089eaffc.css",
+    "main.js": "/ttec/static/js/main.0ff58ec7.js",
     "static/js/787.4d218a1e.chunk.js": "/ttec/static/js/787.4d218a1e.chunk.js",
     "static/media/rabbi-ochs.jpg": "/ttec/static/media/rabbi-ochs.b5e9e243ce5eeb746157.jpg",
     "static/media/seder-pic-2.jpg": "/ttec/static/media/seder-pic-2.68665b4beda6d7827ba7.jpg",
+    "static/media/rabbi-rudner-2.jpg": "/ttec/static/media/rabbi-rudner-2.10faab0d3af5979fb701.jpg",
     "static/media/rabbi-bartfeld.jpg": "/ttec/static/media/rabbi-bartfeld.905a2fa7e8ce3ffc7c08.jpg",
     "static/media/night-seder-3.jpg": "/ttec/static/media/night-seder-3.e9cb1b1af31341cd09eb.jpg",
     "static/media/farbreng.jpg": "/ttec/static/media/farbreng.5045adc24d5ed9e96572.jpg",
@@ -31,12 +32,12 @@
     "static/media/rabbi-rudner-4.jpg": "/ttec/static/media/rabbi-rudner-4.221206048de33bacbca4.jpg",
     "static/media/menu.png": "/ttec/static/media/menu.d451b701d93ee1d2d09f.png",
     "index.html": "/ttec/index.html",
-    "main.aa6cea15.css.map": "/ttec/static/css/main.aa6cea15.css.map",
-    "main.74797e84.js.map": "/ttec/static/js/main.74797e84.js.map",
+    "main.089eaffc.css.map": "/ttec/static/css/main.089eaffc.css.map",
+    "main.0ff58ec7.js.map": "/ttec/static/js/main.0ff58ec7.js.map",
     "787.4d218a1e.chunk.js.map": "/ttec/static/js/787.4d218a1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa6cea15.css",
-    "static/js/main.74797e84.js"
+    "static/css/main.089eaffc.css",
+    "static/js/main.0ff58ec7.js"
   ]
 }
