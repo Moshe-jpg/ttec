@@ -21,7 +21,9 @@
   --red: #d21312;
   --green: #0bbb1a;
   --light-transparent: rgba(255, 255, 255, 0.25);
+  --lighter-transparent: rgba(255, 255, 255, 0.7);
   --dark-transparent: rgba(0, 0, 0, 0.25);
+  --darker-transparent: rgba(0, 0, 0, 0.7);
   --linear-background: repeating-linear-gradient(
     45deg,
     var(--light-transparent),
@@ -74,7 +76,7 @@ input {
   flex-direction: row;
   height: 15vh;
   width: 100%;
-  z-index: 500;
+  z-index: 999;
   backdrop-filter: blur(2.5px);
   color: var(--white);
   background: var(--dark-transparent);
@@ -82,7 +84,7 @@ input {
 
 .navbar .nav-logo {
   height: 2rem;
-  padding: 0 3rem;
+  padding-left: 3rem;
   cursor: pointer;
 }
 
@@ -346,6 +348,7 @@ input {
 
 .testimonials-container {
   width: 100%;
+  min-height: 60vh;
   background: var(--linear-background);
   display: flex;
   align-items: center;
@@ -353,13 +356,12 @@ input {
 }
 
 .testimonials-container .carousel-container {
-  margin-bottom: 50px;
+  margin-bottom: 10vh;
   z-index: 100;
   width: 80%;
-  border: 2px solid var(--gold);
-  border-radius: 25px;
   position: relative;
-  height: 400px; /* the same fixed height as .review-container */
+  height: 400px;
+  width: 100%;
   overflow: hidden;
   text-align: center;
   background: var(--black);
@@ -388,12 +390,12 @@ input {
 }
 
 .testimonials-container .review-text cite {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--red);
 }
 
 .testimonials-container .review-text q {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .testimonials-container .review-text q::before,
@@ -764,12 +766,58 @@ input {
 
 /* tuition component */
 
-#tuition .tuition-header {
+#tuition .img-overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--black);
-  margin: 20vh 0 8vh;
+  height: 110vh;
+  z-index: 10;
+  background: url("./assets/chanuka-mesiba.jpg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+#tuition .tuition-container {
+  width: 100%;
+  padding-top: 20vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+#tuition .tuition-info-container {
+  width: 50%;
+  min-width: 350px;
+  background: var(--darker-transparent);
+  padding: 15px;
+  margin: 25px;
+  backdrop-filter: blur(5px);
+  text-align: left;
+}
+
+#tuition .tuition-info-container h1 {
+  width: 100%;
+  font-size: 2rem;
+  color: var(--red);
+  line-height: 1.5;
+}
+
+#tuition .tuition-info-container p {
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+#tuition iframe {
+  min-width: 400px;
+  max-width: 500px;
+  max-height: none !important;
+  height: 900px;
+  margin: 25px;
 }
 
 /* application component */
@@ -905,12 +953,16 @@ input:-webkit-autofill {
 
 #contact header {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#contact header h1 {
+#contact .contact-header h1 {
   font-size: 2.5rem;
   color: var(--black);
   margin: 20vh 0 8vh;
+  text-align: center;
 }
 
 #contact .contact-page-container {
@@ -930,7 +982,7 @@ input:-webkit-autofill {
   width: 500px;
   min-height: 300px;
   margin: 0 25px 50px;
-  background: var(--light-transparent);
+  background: var(--lighter-transparent);
   color: var(--red);
   padding: 15px;
   border-radius: 15px;
@@ -1018,25 +1070,42 @@ input:-webkit-autofill {
 
 #contact .maps-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 10vh 25px;
-  place-items: center;
-  justify-content: space-around;
-  grid-gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
   background: url("./assets/ttec-gathering.jpg");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-#contact .maps-container iframe {
-  max-width: 100%;
-  border-radius: 15px;
+#contact .maps-container-header h1 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: center;
 }
 
-#contact .maps-container iframe:first-child {
-  grid-column: span 2;
+#contact .iframe-container {
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  background: var(--white);
+  border-radius: 25px;
+  text-align: center;
+}
+
+#contact .iframe-container header h2 {
+  padding: 5px 10px;
+  font-size: 1.7rem;
+}
+
+#contact .maps-container iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 85%;
 }
 
 /* footer component */
@@ -1049,7 +1118,10 @@ input:-webkit-autofill {
   justify-content: space-evenly;
   flex-direction: column;
   background: var(--linear-background);
+  background-color: var(--white);
   color: var(--white);
+  position: relative;
+  z-index: 950;
 }
 
 #footer .footer-header-container {
@@ -1083,7 +1155,7 @@ input:-webkit-autofill {
   width: 100%;
   display: grid;
   align-items: center;
-  justify-content: c;
+  justify-content: center;
   grid-template-columns: 50% 50%;
   background: var(--black);
 }
@@ -1181,7 +1253,7 @@ input:-webkit-autofill {
   }
 
   .navbar .nav-logo {
-    padding: 0;
+    padding-left: 0;
   }
 
   .navbar .toggler {
@@ -1239,7 +1311,137 @@ input:-webkit-autofill {
   .navbar ul li:last-child {
     margin: 0;
   } */
+
+  #home .bg-container {
+    height: 110vh;
+  }
+
+  #home .testimonials-container {
+    min-height: 60vh;
+  }
+
+  .testimonials-container .carousel-container {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10vh;
+    border-radius: 0;
+  }
+
+  .testimonials-container .review-container {
+    height: 400px;
+  }
+
+  .testimonials-container .review-text cite {
+    font-size: 2rem;
+  }
+
+  .testimonials-container .review-text q {
+    font-size: 1.2rem;
+  }
+
+  /* about component */
+
+  #about .about-container .row {
+    flex-direction: column;
+  }
+
+  #about .about-container .text-container {
+    width: 100%;
+    height: unset;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #about .about-container .img-container {
+    width: 100%;
+    height: unset;
+  }
+
+  #about .about-container .row-reverse {
+    flex-direction: column;
+  }
+
+  #about .about-rebbeim-container {
+    margin-bottom: 8vh;
+  }
+  /* tuition component */
+
+  #tuition .tuition-info-container {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* application component */
+
+  #application .application-info {
+    text-align: center;
+  }
+
+  #application .application-info ol,
+  #application .application-info ul {
+    align-items: center;
+  }
+
+  /* tuition component */
+
+  #tuition .img-overlay-container {
+    background: url("./assets/rabbi-rudner-2.jpg");
+    background-position: center;
+  }
+
+  /* contact component */
+
+  #contact .maps-container {
+    padding: 10vh 0;
+  }
+
+  #contact .iframe-container {
+    margin: 50px 0;
+    width: 350px;
+    height: 400px;
+  }
+
+  /* footer component */
+
+  #footer .footer-info-container {
+    padding: 5vh 25px;
+    grid-template-columns: 100%;
+  }
+
+  #footer .footer-links-container {
+    flex-wrap: wrap;
+    border-radius: 0;
+    background: var(--red);
+    width: 100%;
+  }
 }
+
+/* tablet sizing */
+
+/* @media only screen and (max-width: 999px) {
+  #home .bg-container {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "morning1 morning2";
+  }
+
+  #home #morning1 {
+    grid-area: morning1;
+    display: block;
+  }
+
+  #home #morning2 {
+    grid-area: morning2;
+    display: block; 
+  }
+
+  #home #rr,
+  #home #speech {
+    display: none;
+  }
+} */
 
 /* mobile sizing */
 
@@ -1360,7 +1562,8 @@ input:-webkit-autofill {
     margin: 0 0 50px;
   }
 
-  #application .application-info ol, #application .application-info ul {
+  #application .application-info ol,
+  #application .application-info ul {
     align-items: center;
   }
 
@@ -1398,13 +1601,11 @@ input:-webkit-autofill {
   }
 
   #contact .maps-container-header h1 {
-    margin: 0;
     background: var(--red);
     color: var(--white);
     border-radius: 5px;
     padding: 5px 10px;
     width: min-content;
-    margin: 0 auto 30px;
   }
 
   /* footer component */

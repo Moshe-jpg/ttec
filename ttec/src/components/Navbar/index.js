@@ -20,7 +20,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <a href="/">
+      <a href="/ttec">
         <img src={logo} alt="TTEC logo" className="nav-logo"></img>
       </a>
       <ul className={active}>
