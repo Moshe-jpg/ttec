@@ -356,7 +356,7 @@ input {
 }
 
 .testimonials-container .carousel-container {
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
   z-index: 100;
   width: 80%;
   position: relative;

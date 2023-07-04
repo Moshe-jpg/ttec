@@ -17,10 +17,10 @@ const ContactForm = () => {
     // send the form with the updated form.current
     emailjs
       .sendForm(
-        "service_enpvni6",
+        "service_7m6pbvo",
         "contact_form",
         form.current,
-        "iwUP8eH1NlcSvoxkb"
+        "uVrxlPj8AW1Roqueo"
       )
       .then(
         (result) => {
