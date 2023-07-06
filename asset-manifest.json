@@ -1,22 +1,19 @@
 {
   "files": {
     "main.css": "/ttec/static/css/main.2759994f.css",
-    "main.js": "/ttec/static/js/main.4789e412.js",
+    "main.js": "/ttec/static/js/main.4dffacc5.js",
     "static/js/787.4d218a1e.chunk.js": "/ttec/static/js/787.4d218a1e.chunk.js",
     "static/media/rabbi-ochs.jpg": "/ttec/static/media/rabbi-ochs.b5e9e243ce5eeb746157.jpg",
     "static/media/seder-pic-2.jpg": "/ttec/static/media/seder-pic-2.68665b4beda6d7827ba7.jpg",
     "static/media/rabbi-rudner-2.jpg": "/ttec/static/media/rabbi-rudner-2.10faab0d3af5979fb701.jpg",
-    "static/media/rabbi-bartfeld.jpg": "/ttec/static/media/rabbi-bartfeld.905a2fa7e8ce3ffc7c08.jpg",
     "static/media/night-seder-3.jpg": "/ttec/static/media/night-seder-3.e9cb1b1af31341cd09eb.jpg",
     "static/media/farbreng.jpg": "/ttec/static/media/farbreng.5045adc24d5ed9e96572.jpg",
     "static/media/chanuka-mesiba.jpg": "/ttec/static/media/chanuka-mesiba.8bdb6d30b73c0c213c84.jpg",
     "static/media/chavrusa.jpg": "/ttec/static/media/chavrusa.427078f50cecb3c5edcc.jpg",
-    "static/media/rabbi-rothenberg.jpg": "/ttec/static/media/rabbi-rothenberg.1d4ec965820cb46ac371.jpg",
     "static/media/seder-pic-3.jpg": "/ttec/static/media/seder-pic-3.c3f605e7856406fba6f2.jpg",
     "static/media/ttec-gathering.jpg": "/ttec/static/media/ttec-gathering.8a81c0185bf88190c207.jpg",
     "static/media/night-seder-2.jpg": "/ttec/static/media/night-seder-2.7d5105149b0f661b603a.jpg",
     "static/media/laining.jpg": "/ttec/static/media/laining.64c09180db966a105837.jpg",
-    "static/media/rabbi-oberstein-4.jpg": "/ttec/static/media/rabbi-oberstein-4.7d0fabec56854f0b6816.jpg",
     "static/media/speech.jpg": "/ttec/static/media/speech.51981cdf58c576eb9aba.jpg",
     "static/media/skiing.jpg": "/ttec/static/media/skiing.84be16eda0a34de87a2e.jpg",
     "static/media/logo-small.png": "/ttec/static/media/logo-small.ee1f1ccb5c9589e56413.png",
@@ -29,15 +26,14 @@
     "static/media/guys-pic.jpg": "/ttec/static/media/guys-pic.e7a004dc9ccb12fd00b5.jpg",
     "static/media/moshe-gadol-logo.webp": "/ttec/static/media/moshe-gadol-logo.8632a20cf7efd0fe90ae.webp",
     "static/media/arrow.png": "/ttec/static/media/arrow.a047fe68b104ae4adae5.png",
-    "static/media/rabbi-rudner-4.jpg": "/ttec/static/media/rabbi-rudner-4.221206048de33bacbca4.jpg",
     "static/media/menu.png": "/ttec/static/media/menu.d451b701d93ee1d2d09f.png",
     "index.html": "/ttec/index.html",
     "main.2759994f.css.map": "/ttec/static/css/main.2759994f.css.map",
-    "main.4789e412.js.map": "/ttec/static/js/main.4789e412.js.map",
+    "main.4dffacc5.js.map": "/ttec/static/js/main.4dffacc5.js.map",
     "787.4d218a1e.chunk.js.map": "/ttec/static/js/787.4d218a1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2759994f.css",
-    "static/js/main.4789e412.js"
+    "static/js/main.4dffacc5.js"
   ]
 }
