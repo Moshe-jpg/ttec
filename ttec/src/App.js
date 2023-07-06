@@ -23,9 +23,6 @@ function App() {
       name: "Applications",
     },
     {
-      name: "Tests",
-    },
-    {
       name: "Contact",
     },
     {

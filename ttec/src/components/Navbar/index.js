@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo-small.png";
 import menuBar from "../../assets/menu.png";
 import xBar from "../../assets/xbar.png";
+import ScrollToTop from "../../helpers/ScrollToTop";
 
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
@@ -27,8 +28,11 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[0]);
-            handleListItemClick();
+            ScrollToTop();
+            setTimeout(() => {
+              setCurrentPage(pages[0]);
+              handleListItemClick();
+            }, 1000);
           }}
         >
           Home
@@ -36,8 +40,11 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[1]);
-            handleListItemClick();
+            ScrollToTop();
+            setTimeout(() => {
+              setCurrentPage(pages[1]);
+              handleListItemClick();
+            }, 1000);
           }}
         >
           About
@@ -45,8 +52,11 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[2]);
-            handleListItemClick();
+            ScrollToTop();
+            setTimeout(() => {
+              setCurrentPage(pages[2]);
+              handleListItemClick();
+            }, 1000);
           }}
         >
           Gallery
@@ -54,8 +64,11 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[3]);
-            handleListItemClick();
+            ScrollToTop();
+            setTimeout(() => {
+              setCurrentPage(pages[3]);
+              handleListItemClick();
+            }, 1000);
           }}
         >
           Tuition
@@ -63,8 +76,11 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[4]);
-            handleListItemClick();
+            ScrollToTop();
+            setTimeout(() => {
+              setCurrentPage(pages[4]);
+              handleListItemClick();
+            }, 1000);
           }}
         >
           Apply
@@ -72,17 +88,11 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[5]);
-            handleListItemClick();
-          }}
-        >
-          Tests
-        </li>
-        <li
-          className="nav-link"
-          onClick={() => {
-            setCurrentPage(pages[6]);
-            handleListItemClick();
+            ScrollToTop();
+            setTimeout(() => {
+              setCurrentPage(pages[5]);
+              handleListItemClick();
+            }, 1000);
           }}
         >
           Contact

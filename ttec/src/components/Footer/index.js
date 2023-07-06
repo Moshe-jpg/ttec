@@ -1,6 +1,7 @@
 import React from "react";
 import arrow from "../../assets/arrow.png";
 import mgLogo from "../../assets/moshe-gadol-logo.webp";
+import ScrollToTop from "../../helpers/ScrollToTop";
 
 const Footer = (props) => {
   const { pages = [], setCurrentPage } = props;
@@ -88,7 +89,10 @@ const Footer = (props) => {
           <li>
             <button
               onClick={() => {
-                setCurrentPage(pages[0]);
+                ScrollToTop();
+                setTimeout(() => {
+                  setCurrentPage(pages[0]);
+                }, 1000);
               }}
             >
               Home
@@ -97,7 +101,10 @@ const Footer = (props) => {
           <li>
             <button
               onClick={() => {
-                setCurrentPage(pages[1]);
+                ScrollToTop();
+                setTimeout(() => {
+                  setCurrentPage(pages[1]);
+                }, 1000);
               }}
             >
               About
@@ -106,7 +113,10 @@ const Footer = (props) => {
           <li>
             <button
               onClick={() => {
-                setCurrentPage(pages[2]);
+                ScrollToTop();
+                setTimeout(() => {
+                  setCurrentPage(pages[2]);
+                }, 1000);
               }}
             >
               Gallery
@@ -115,7 +125,10 @@ const Footer = (props) => {
           <li>
             <button
               onClick={() => {
-                setCurrentPage(pages[3]);
+                ScrollToTop();
+                setTimeout(() => {
+                  setCurrentPage(pages[3]);
+                }, 1000);
               }}
             >
               Tuition
@@ -124,7 +137,10 @@ const Footer = (props) => {
           <li>
             <button
               onClick={() => {
-                setCurrentPage(pages[4]);
+                ScrollToTop();
+                setTimeout(() => {
+                  setCurrentPage(pages[4]);
+                }, 1000);
               }}
             >
               Apply
@@ -133,16 +149,10 @@ const Footer = (props) => {
           <li>
             <button
               onClick={() => {
-                setCurrentPage(pages[5]);
-              }}
-            >
-              Tests
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                setCurrentPage(pages[6]);
+                ScrollToTop();
+                setTimeout(() => {
+                  setCurrentPage(pages[5]);
+                }, 1000);
               }}
             >
               Contact
