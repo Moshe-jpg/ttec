@@ -1,9 +1,9 @@
 import React from "react";
-import morningImg from "../../assets/morning-1.jpg";
-import morning2Img from "../../assets/morning-2.jpg";
-import rrImg from "../../assets/rabbi-rudner.jpg";
-import speechImg from "../../assets/speech.jpg";
-import logo from "../../assets/ttec-logo.png";
+import morningImg from "../../assets/morning-1.webp";
+import morning2Img from "../../assets/morning-2.webp";
+import rrImg from "../../assets/rabbi-rudner.webp";
+import speechImg from "../../assets/speech.webp";
+import logo from "../../assets/ttec-logo-no-bg.webp";
 import Reviews from "../Reviews";
 import ScrollToTop from "../../helpers/ScrollToTop";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../assets/arrow.png";
+import arrow from "../../assets/arrow.webp";
 import mgLogo from "../../assets/moshe-gadol-logo.webp";
 import ScrollToTop from "../../helpers/ScrollToTop";
 

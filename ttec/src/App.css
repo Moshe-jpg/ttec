@@ -220,7 +220,7 @@ input {
 
 #home .offers-area {
   width: 100%;
-  background: url("./assets/seder-pic-2.jpg");
+  background: url("./assets/seder-pic-2.webp");
   background-size: cover;
   background-position: 50%;
   position: relative;
@@ -773,7 +773,7 @@ input {
   width: 100%;
   height: 110vh;
   z-index: 10;
-  background: url("./assets/chanuka-mesiba.jpg");
+  background: url("./assets/morning-2.webp");
   background-position: 50%;
   background-size: cover;
 }
@@ -816,14 +816,14 @@ input {
   min-width: 400px;
   max-width: 500px;
   max-height: none !important;
-  height: 900px;
+  height: 1000px;
   margin: 25px;
 }
 
 /* application component */
 
 #application {
-  background: url("./assets/seder-pic-3.jpg");
+  background: url("./assets/seder-pic-3.webp");
   background-size: cover;
   background-position: 50%;
   position: relative;
@@ -1076,7 +1076,7 @@ input:-webkit-autofill {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  background: url("./assets/ttec-gathering.jpg");
+  background: url("./assets/ttec-gathering.webp");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1385,7 +1385,7 @@ input:-webkit-autofill {
   /* tuition component */
 
   #tuition .img-overlay-container {
-    background: url("./assets/rabbi-rudner-2.jpg");
+    background: url("./assets/rabbi-rudner-2.webp");
     background-position: center;
   }
 

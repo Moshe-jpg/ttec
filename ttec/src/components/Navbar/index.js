@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo-small.png";
-import menuBar from "../../assets/menu.png";
-import xBar from "../../assets/xbar.png";
+import logo from "../../assets/logo-small-no-bg.webp";
+import menuBar from "../../assets/menu.webp";
+import xBar from "../../assets/xbar.webp";
 import ScrollToTop from "../../helpers/ScrollToTop";
 
 const Navbar = (props) => {
@@ -21,7 +21,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <a href="/ttec">
+      <a href="/">
         <img src={logo} alt="TTEC logo" className="nav-logo"></img>
       </a>
       <ul className={active}>
