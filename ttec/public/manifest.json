@@ -3,18 +3,18 @@
   "name": "Toronto's Post Israel Beis Medrash",
   "icons": [
     {
-      "src": "torah.webp",
+      "src": "torah.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/webp"
+      "type": "image/png"
     },
     {
-      "src": "torah.webp",
-      "type": "image/webp",
+      "src": "torah.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "torah.webp",
-      "type": "image/webp",
+      "src": "torah.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
