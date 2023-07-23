@@ -1,0 +1,64 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --off-white: #f5efe7;
+  --grey: #bfccb5;
+  --red: #d21312;
+  --light-transparent: rgba(255, 255, 255, 0.25);
+  --dark-transparent: rgba(0, 0, 0, 0.25);
+}
+
+#fullpage {
+  width: 100%;
+  height: 100vh;
+}
+
+#fullpage * {
+  overflow: hidden;
+}
+
+.slide,
+.section {
+  text-align: center;
+}
+
+.section .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: var(--red);
+  backdrop-filter: blur(5px);
+}
+
+#fp-nav ul li:first-child {
+  display: none;
+}
+
+.slide,
+.section {
+  text-align: center;
+}
+
+.section .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: var(--red);
+  backdrop-filter: blur(5px);
+}
+
+.section .fp-overflow {
+  height: 100%;
+}
+
+.fp-warning, .fp-watermark {
+  display: none;
+}
