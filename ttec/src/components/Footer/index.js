@@ -173,7 +173,7 @@ const Footer = (props) => {
       </div>
       <div className="website-container">
         <p>Website created by</p>&nbsp;
-        <a href="www.gadol.dev">
+        <a href="https://gadol.dev">
           <img src={mgLogo} alt="Moshe Gadol Portfolio Site"></img>
         </a>
       </div>
