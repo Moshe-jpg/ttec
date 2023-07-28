@@ -1,18 +1,9 @@
 import React from "react";
-import morningSeder from "../../assets/speech.jpg";
-import guysPic from "../../assets/guys-pic.jpg";
-import nightSeder2 from "../../assets/seder-pic-2.jpg";
-import rabbiOchs from "../../assets/rabbi-ochs.jpg";
-import skiingPic from "../../assets/skiing.jpg";
-// import rabbiRudner from "../../assets/rabbi-rudner.jpg";
-// import rabbiOberstein from "../../assets/rabbi-oberstein-4.jpg";
-// import rabbiRothenberg from "../../assets/rabbi-rothenberg.jpg";
-// import rabbiBartfeld from "../../assets/rabbi-bartfeld.jpg";
-// import rabbiErlanger from "../../assets/night-seder-north.jpg";
-// import rabbiWarman from "../../assets/night-seder-north-2.jpg";
-// import rabbiTessler from "../../assets/seder-pic-2.jpg";
-// import yaakovSmith from "../../assets/rabbi-rudner-4.jpg";
-// import arrow from "../../assets/arrow.png";
+import morningSeder from "../../assets/speech.webp";
+import guysPic from "../../assets/guys-pic.webp";
+import nightSeder2 from "../../assets/seder-pic-2.webp";
+import rabbiOchs from "../../assets/rabbi-ochs.webp";
+import skiingPic from "../../assets/skiing.webp";
 import ScrollToTop from "../../helpers/ScrollToTop";
 
 const About = (props) => {

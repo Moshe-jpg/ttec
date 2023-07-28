@@ -4,7 +4,6 @@ import About from "../About";
 import Gallery from "../Gallery";
 import Tuition from "../Tuition";
 import Applications from "../Applications";
-import Tests from "../Tests";
 import Contact from "../Contact";
 import PageContent from "../PageContent";
 
@@ -30,15 +29,11 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
       document.title =
         "Applications | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
       return <Applications />;
-    } else if (currentPage.name === "Tests") {
-      document.title =
-        "Tests | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
-      return <Tests />;
     } else if (currentPage.name === "Contact") {
       document.title =
         "Contact | TTEC | Thornhill Torah Education Centre | Toronto's Post Israel Beis Medrash";
+      }
       return <Contact />;
-    }
   };
 
   return (
