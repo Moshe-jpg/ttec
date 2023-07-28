@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1b767e2c.css",
-    "main.js": "/static/js/main.bcf10381.js",
+    "main.js": "/static/js/main.d2306b58.js",
     "static/js/787.4d218a1e.chunk.js": "/static/js/787.4d218a1e.chunk.js",
     "static/media/rabbi-ochs.webp": "/static/media/rabbi-ochs.275fffdc5fcffafb8446.webp",
     "static/media/seder-pic-2.webp": "/static/media/seder-pic-2.3d1354a50a64ee210fff.webp",
@@ -31,11 +31,11 @@
     "static/media/xbar.webp": "/static/media/xbar.6493c1d79a19c6639586.webp",
     "index.html": "/index.html",
     "main.1b767e2c.css.map": "/static/css/main.1b767e2c.css.map",
-    "main.bcf10381.js.map": "/static/js/main.bcf10381.js.map",
+    "main.d2306b58.js.map": "/static/js/main.d2306b58.js.map",
     "787.4d218a1e.chunk.js.map": "/static/js/787.4d218a1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b767e2c.css",
-    "static/js/main.bcf10381.js"
+    "static/js/main.d2306b58.js"
   ]
 }
