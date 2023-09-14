@@ -24,16 +24,16 @@
   --lighter-transparent: rgba(255, 255, 255, 0.7);
   --dark-transparent: rgba(0, 0, 0, 0.25);
   --darker-transparent: rgba(0, 0, 0, 0.7);
-  --linear-background: repeating-linear-gradient(
+  /* --linear-background: repeating-linear-gradient(
     45deg,
     var(--light-transparent),
     var(--dark-transparent) 2px
-  );
+  ); */
 }
 
-body {
+/* body {
   background: var(--linear-background);
-}
+} */
 
 section {
   width: 100%;
@@ -43,7 +43,7 @@ section {
   justify-content: center;
   flex-direction: column;
   z-index: 10;
-  background: var(--linear-background);
+  /* background: var(--linear-background); */
 }
 
 a,
@@ -124,9 +124,9 @@ input {
 
 /* home component */
 
-#home {
+/* #home {
   background: var(--linear-background);
-}
+} */
 
 #home .bg-container {
   display: grid;
@@ -266,7 +266,8 @@ input {
   width: 350px;
   height: 400px;
   position: relative;
-  background: var(--off-white);
+  background: var(--lighter-transparent);
+  backdrop-filter: blur(5px);
   color: var(--black);
   margin: 10px;
   border-radius: 5px;
@@ -295,11 +296,11 @@ input {
   letter-spacing: 0;
 }
 
-#home .offers-container h3,
+/* #home .offers-container h3,
 #home .offers-container .info-container {
   z-index: 50;
   backdrop-filter: blur(1px);
-}
+} */
 
 #home .offers-container h3 {
   font-size: 1.75rem;
@@ -328,7 +329,7 @@ input {
 
 #home .btn-container {
   width: 100%;
-  background: var(--linear-background);
+  /* background: var(--linear-background); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,7 +350,7 @@ input {
 .testimonials-container {
   width: 100%;
   min-height: 60vh;
-  background: var(--linear-background);
+  /* background: var(--linear-background); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,7 +510,7 @@ input {
 
 #about {
   justify-content: flex-start;
-  background: var(--linear-background);
+  /* background: var(--linear-background); */
 }
 
 #about .about-header-container {
@@ -1117,7 +1118,7 @@ input:-webkit-autofill {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  background: var(--linear-background);
+  /* background: var(--linear-background); */
   background-color: var(--white);
   color: var(--white);
   position: relative;
